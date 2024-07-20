@@ -3,10 +3,10 @@ import React, {useContext} from "react";
 import { LockOutlined, MailOutlined} from "@ant-design/icons";
 import { Button, Form, Input } from "antd";
 import { toast } from "react-toastify";
-import {Urls} from "../../constant/Urls.js";
-import AuthContext from "../../contexts/auth.context.js";
+import {Urls} from "../../constant/Urls.jsx";
+import AuthContext from "../../contexts/auth.context.jsx";
 import { login } from "../../services/api/auth/auth.services";
-import AuthCookies from "../../services/cookie/authToken.cookie.js";
+import AuthCookies from "../../services/cookie/authToken.cookie.jsx";
 
 const LoginComponent = () => {
   const { setIsLoggedInUser}= useContext(AuthContext);

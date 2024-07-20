@@ -3,7 +3,7 @@ import React from "react";
 import { LockOutlined, MailOutlined, UserOutlined } from "@ant-design/icons";
 import { Button, Form, Input } from "antd";
 import { toast } from "react-toastify";
-import {Urls} from "../../constant/Urls.js"
+import {Urls} from "../../constant/Urls.jsx"
 import { signup } from "../../services/api/auth/auth.services";
 
 const SignupComponent = () => {

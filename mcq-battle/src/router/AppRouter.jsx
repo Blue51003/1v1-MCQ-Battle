@@ -6,8 +6,8 @@ import LoginPage from "../pages/login.page";
 import SignupPage from "../pages/signup.page";
 import EditMcqPage from "../pages/mcq/EditMcqPage";
 import McqPage from "../pages/mcq/McqPage";
-import McqsPage from "../pages/mcq/mcqs.page";
-import NewMcqPage from "../pages/mcq/newMcq.page";
+import McqsPage from "../pages/mcq/McqsPage";
+import NewMcqPage from "../pages/mcq/NewMcqPage";
 import ProtectedRoute from "./ProtectedRoute";
 
 const AppRouter = () => {
@@ -30,6 +30,13 @@ const AppRouter = () => {
             element={
                 <ProtectedRoute>
                     <McqPage/>
+                </ProtectedRoute>
+            }></Route>
+            <Route
+            path={Urls.Mcqs.NewMcq(":id")}
+            element={
+                <ProtectedRoute>
+                    <NewMcqPage/>
                 </ProtectedRoute>
             }></Route>
             <Route
